@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tableorder</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  </head>
+
+  <body>
+    <form action="" onsubmit="event.preventDefault(), submitform()">
+      <label for="amount">dish name</label>
+      <input type="text" id="name" />
+
+      <label for="description">Description</label>
+      <input type="text" id="description" />
+
+      <label for="tableno">Choose a table</label>
+      <select class="form-select" id="tableno">
+        <option selected>Select an option</option>
+        <option value="table1">table1</option>
+        <option value="table2">table2</option>
+        <option value="table3">table3</option>
+      </select>
+
+      <button type="submit" class="form-control my-4">Add order</button>
+    </form>
+
+    <div id="table1"><h2>table1</h2></div>
+    <div id="table2"><h2>table2</h2></div>
+    <div id="table3"><h2>table3</h2></div>
+    <script src="main.js"></script>
+  </body>
+</html>
